@@ -50,9 +50,42 @@ func main() {
 
 	// operadores unários
 	number := 10
+	//incremento +1
 	number++
+	//decremento - 1
+	number--
 	number += 15 // number = number + 15
 
 	fmt.Println(number)
+
+	number *= 3
+
+	fmt.Println(number)
+
+	number -= 20
+	fmt.Println(number)
+
+	number -= 5
+	number /= 5
+	fmt.Println(number)
+
+	number %= 2
+	fmt.Println(number)
+
+	// fim operadores unários
+
+	//OP Ternário nao tem em GOlAgng como fazemos
+	// texto := number > 5 ? "Numero maior" : "Número menor";
+
+	// como fazer
+
+	var texto string
+	if number > 5 {
+		texto = "Maior que 5"
+	} else {
+		texto = "Menor que 5"
+	}
+
+	fmt.Println(texto)
 
 }
