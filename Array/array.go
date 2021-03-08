@@ -40,7 +40,41 @@ func main() {
 
 	fmt.Println("------")
 
-	slice2 := array2[1:3]
+	slice2 := array2[1:3] // pega indice 1 e 2 o 3 nao
 	fmt.Println(slice2)
+
+	// arrays internos e slices
+	fmt.Println("------")
+
+	// usando a funçao make aloca um espaço na memoria
+	// tipo do slice quantidade 10 capacidade max 15
+	slice3 := make([]float32, 10, 11)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // tamanho
+	fmt.Println(cap(slice3)) // capacidade
+	fmt.Println("------")
+
+	slice3 = append(slice3, 5)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // tamanho
+	fmt.Println(cap(slice3)) // capacidade
+	fmt.Println("------")
+
+	slice3 = append(slice3, 6)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // tamanho
+	fmt.Println(cap(slice3)) // capacidade
+	fmt.Println("------")
+
+	slice4 := make([]float32, 5)
+	fmt.Println(slice4)
+	fmt.Println(len(slice4)) // tamanho
+	fmt.Println(cap(slice4)) // capacidade
+	fmt.Println("------")
+
+	slice4 = append(slice4, 10)
+	fmt.Println(slice4)
+	fmt.Println(len(slice4)) // tamanho
+	fmt.Println(cap(slice4)) // capacidade
 
 }
